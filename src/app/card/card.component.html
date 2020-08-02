@@ -1,0 +1,25 @@
+<div class="custom-card">
+  <div class="poster-img-container">
+    <img
+      *ngIf="film.Poster !== 'N/A'"
+      class="poster-img"
+      src="{{ film.Poster }}"
+    />
+    <img
+      *ngIf="film.Poster == 'N/A'"
+      class="poster-img"
+      src="assets/no-thumbnail.jpg"
+    />
+  </div>
+  <div class="card-content p-2">
+    <h2 class="poster-title">{{ film.Title }}</h2>
+    <span class="small-card"
+      ><i class="fas fa-film"></i>
+      <span class="type">{{ film.Type }}</span>
+    </span>
+    <span class="release-date-card small-card"
+      ><i class="far fa-clock"></i>
+      <span class="date">{{ film.Year }}</span>
+    </span>
+  </div>
+</div>

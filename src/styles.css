@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --main-bg-color: #F6F7F8;
+  --primary-color: #2980B9;
+  --secondary-color: #2C3E50;
+
+  --primary-font: 'Poppins', sans-serif;
+
+  --large-font-size: 35px;
+  --medium-font-size: 25px;
+  --inbetween-font-size: 17px;
+  --small-font-size: 14px;
+}
+
+body{
+    background-color: var(--main-bg-color);
+}

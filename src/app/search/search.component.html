@@ -1,0 +1,36 @@
+<form class="input-group mt-5 search-container" (submit)="$event.preventDefault();search();">
+  <div class="input-group-prepend dropdown">
+    <button
+      class="btn dropdown-toggle"
+      type="button"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      All
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div role="separator" class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+  <input
+    id="search-input"
+    (change)="query = $event.target.value"
+    type="text"
+    class="form-control"
+    placeholder="Search IMDB"
+  />
+  <div class="input-group-append" (click)="search()">
+    <span class="input-group-text" id="basic-addon2">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+</form>
+
+<div class="custom-cards-grid mt-5">
+  <app-card *ngFor="let obj of SearchResults" [film]="obj"></app-card>
+</div>

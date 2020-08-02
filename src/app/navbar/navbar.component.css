@@ -1,0 +1,38 @@
+.navbar {
+  margin-top: 30px;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.logo>h1 {
+  font-family: var(--primary-font);
+  font-weight: bold;
+  font-size: var(--large-font-size);
+  color: var(--primary-color)
+}
+
+.logo>p {
+  font-family: var(--primary-font);
+  font-weight: bold;
+  font-size: var(--small-font-size);
+  color: var(--secondary-color);
+}
+
+a {
+  font-size: var(--medium-font-size);
+  font-weight: lighter;
+  color: var(--secondary-color);
+}
+
+.active-link {
+  font-weight: 400;
+}
+
+.links {
+  margin-bottom: 26px;
+}
+
+.links a {
+  padding: 10px;
+  font-size: var(--inbetween-font-size);
+}
